@@ -19,15 +19,33 @@ def deleteHead(listManipulated):
 
 def printContents(listToPrint):
     print(listToPrint)
-
-def 
+"""
+    Function returns a slice of the list from valid token position 
+    (including the token postion) to the end of the list and it does not 
+    modify the original one. If token is greater than the index of the 
+    last element function will return an empty list. If empty list is given,
+    an empty list will be returned. 
+"""
+def returnSlicedList(toBeSliced, token):
+    if len(toBeSliced) > 0:
+        if len(toBeSliced)-1 >= token:
+            return toBeSliced[token:]
+        else:
+            return []
+    else:
+        return []
 #We created a list of numbers
 #We delete the head and then we print the
 #list. As expected the functions manipulate the
 #original list
 numbers = [1,2,3,4,5]
+print(returnSlicedList(numbers, 2))
+print('Here is the numbers list after a slice of it was returned', numbers)
+#Wrong way to attempt to delete head
+#this creates a new list referenced by numbersDeletedHead
+#without affecting the intial list
+numbersDeletedHead = numbers[1:]
 while len(numbers) > 0:
     printContents(numbers)
     deleteHead(numbers)
 printContents(numbers)
-    
