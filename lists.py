@@ -1,4 +1,6 @@
+# -*- coding: utf-8 -*-
 """
+    Created on Mon Jul 27 16:42:29 2020
     
     @author: Michael Corleone
     List - Chapter 8: Python for Everyone
@@ -9,7 +11,7 @@
     Empty List => []
     List values can be assigned to variables.
     Lists are mutable
-    In operator works on lists. Negative indices start counting from the end of the list
+    In operator works on lists. Negative indexes start counting from the end of the list
     if an index is out of bounds you get an IndexError
     
 """
@@ -33,9 +35,9 @@ for i in range(len(cheesesToSearchFor)):
         print(cheesesToSearchFor[i], 'is not in :', cheeses)
         countMisses = countMisses + 1
 print('Hits : ', countHits, '. Misses : ', countMisses, '.')
-#range returns a list of indices 0 to len(list)-1
+#range returns a list of indices 0 to length-1
 print(range(len(cheesesToSearchFor)))
-#You can add lists with the plus operatior
+#You can add lists with the plus operations
 a = [0, 1, 2, 3, 4, 5]
 b = [6, 7, 8, 9 , 10]
 c = a + b

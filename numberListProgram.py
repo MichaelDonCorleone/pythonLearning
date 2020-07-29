@@ -1,8 +1,9 @@
+# -*- coding: utf-8 -*-
 """
 
     @author: MichaelCorleone
     
-    This script will read numbers from the keyboard and return 
+    This program will read numbers from the keyboard and return 
     them to the user. We are going to use the built in functions of lists to
     print the maximum of the numbers, minimum, sum, the average and 
     how many numbers the list contains. We can easily write our own
